@@ -1,0 +1,772 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Кейс: линия фотосепарации «Сапсан» под ключ — Смарт Грейд</title>
+
+  <!-- TailwindCSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Icon font (Font Awesome) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          boxShadow: {
+            soft: '0 10px 30px rgba(0,0,0,.08)',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-slate-50 text-slate-900 font-sans">
+  <!-- Top bar -->
+  <div class="bg-slate-900 text-slate-100">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between">
+      <div class="flex items-center gap-3 text-sm">
+        <span class="inline-flex items-center gap-2">
+          <i class="fa-solid fa-industry text-emerald-400"></i>
+          <span class="font-semibold">Смарт Грейд</span>
+        </span>
+        <span class="hidden sm:inline text-slate-300">• Разработка и поставка фотосепараторов «Сапсан»</span>
+      </div>
+      <div class="flex items-center gap-4 text-sm">
+        <a href="#case" class="hidden sm:inline hover:text-emerald-300">Кейс</a>
+        <a href="#results" class="hidden sm:inline hover:text-emerald-300">Результаты</a>
+        <a href="#cta" class="hidden sm:inline hover:text-emerald-300">Консультация</a>
+        <a href="#lead" class="inline-flex items-center gap-2 rounded-full bg-emerald-500 px-4 py-1.5 font-semibold text-slate-900 hover:bg-emerald-400 transition">
+          <i class="fa-solid fa-phone"></i>
+          Оставить заявку
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <header class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-emerald-50 via-slate-50 to-sky-50"></div>
+    <div class="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-emerald-200/40 blur-3xl"></div>
+    <div class="absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-sky-200/40 blur-3xl"></div>
+
+    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 lg:py-18">
+      <div class="grid lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-7">
+          <div class="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 shadow-soft">
+            <i class="fa-solid fa-file-circle-check text-emerald-600"></i>
+            <span class="text-sm font-semibold text-slate-700">Кейс внедрения под ключ</span>
+            <span class="text-sm text-slate-500">| Семеноводство</span>
+          </div>
+
+          <h1 class="mt-5 text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">
+            Как мы увеличили прибыль семенного хозяйства на <span class="text-emerald-700">38%</span>
+            благодаря линии фотосепарации «Сапсан» под ключ
+          </h1>
+
+          <p class="mt-5 text-lg text-slate-700 leading-relaxed">
+            От аудита и тест-сортировки на сырье заказчика — до монтажа, пусконаладки и обучения.
+            В результате: экспортное качество, меньше потерь, выше производительность и маржинальность.
+          </p>
+
+          <div class="mt-7 flex flex-col sm:flex-row gap-3">
+            <a href="#lead" class="inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-600 px-6 py-3 font-semibold text-white hover:bg-emerald-700 transition shadow-soft">
+              <i class="fa-solid fa-comment-dots"></i>
+              Получить консультацию инженера
+            </a>
+            <a href="#case" class="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-6 py-3 font-semibold text-slate-800 hover:bg-slate-100 transition shadow-soft">
+              <i class="fa-solid fa-circle-down"></i>
+              Смотреть кейс
+            </a>
+          </div>
+
+          <div class="mt-8 grid sm:grid-cols-3 gap-3">
+            <div class="rounded-2xl bg-white p-4 shadow-soft">
+              <div class="flex items-center gap-2 text-emerald-700 font-bold">
+                <i class="fa-solid fa-bolt"></i> Быстрый запуск
+              </div>
+              <p class="mt-2 text-sm text-slate-600">Проектирование → монтаж → пусконаладка + обучение.</p>
+            </div>
+            <div class="rounded-2xl bg-white p-4 shadow-soft">
+              <div class="flex items-center gap-2 text-emerald-700 font-bold">
+                <i class="fa-solid fa-magnifying-glass-chart"></i> Тест на сырье
+              </div>
+              <p class="mt-2 text-sm text-slate-600">Показываем результат до покупки, снижаем риски.</p>
+            </div>
+            <div class="rounded-2xl bg-white p-4 shadow-soft">
+              <div class="flex items-center gap-2 text-emerald-700 font-bold">
+                <i class="fa-solid fa-headset"></i> Поддержка
+              </div>
+              <p class="mt-2 text-sm text-slate-600">Сопровождение после запуска и настройка режимов.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero card -->
+        <div class="lg:col-span-5">
+          <div class="rounded-3xl bg-white shadow-soft border border-slate-200 overflow-hidden">
+            <div class="p-6 sm:p-8">
+              <div class="flex items-center justify-between">
+                <div>
+                  <p class="text-sm text-slate-500">Проект</p>
+                  <p class="text-xl font-extrabold">Линия сортировки под ключ</p>
+                </div>
+                <div class="h-12 w-12 rounded-2xl bg-emerald-100 flex items-center justify-center">
+                  <i class="fa-solid fa-seedling text-emerald-700 text-xl"></i>
+                </div>
+              </div>
+
+              <div class="mt-6 grid gap-3">
+                <div class="flex items-start gap-3">
+                  <i class="fa-solid fa-location-dot mt-1 text-slate-400"></i>
+                  <p class="text-slate-700"><span class="font-semibold">Регион:</span> Центральный ФО</p>
+                </div>
+                <div class="flex items-start gap-3">
+                  <i class="fa-solid fa-wheat-awn mt-1 text-slate-400"></i>
+                  <p class="text-slate-700"><span class="font-semibold">Культуры:</span> пшеница + мелкосемянные</p>
+                </div>
+                <div class="flex items-start gap-3">
+                  <i class="fa-solid fa-bullseye mt-1 text-slate-400"></i>
+                  <p class="text-slate-700"><span class="font-semibold">Цель:</span> повышение качества и снижение потерь</p>
+                </div>
+              </div>
+
+              <div class="mt-7 rounded-2xl bg-slate-50 p-4 border border-slate-200">
+                <div class="flex items-center gap-2 font-bold text-slate-800">
+                  <i class="fa-solid fa-chart-line text-emerald-600"></i>
+                  Итоги за 3 месяца
+                </div>
+                <div class="mt-4 grid grid-cols-2 gap-3">
+                  <div class="rounded-xl bg-white p-3 border border-slate-200">
+                    <p class="text-xs text-slate-500">Маржинальность</p>
+                    <p class="text-2xl font-extrabold text-emerald-700">+38%</p>
+                  </div>
+                  <div class="rounded-xl bg-white p-3 border border-slate-200">
+                    <p class="text-xs text-slate-500">Потери</p>
+                    <p class="text-2xl font-extrabold text-emerald-700">−22%</p>
+                  </div>
+                  <div class="rounded-xl bg-white p-3 border border-slate-200">
+                    <p class="text-xs text-slate-500">Производительность</p>
+                    <p class="text-2xl font-extrabold text-emerald-700">+35%</p>
+                  </div>
+                  <div class="rounded-xl bg-white p-3 border border-slate-200">
+                    <p class="text-xs text-slate-500">Ручной труд</p>
+                    <p class="text-2xl font-extrabold text-emerald-700">~−50%</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-7 flex flex-col sm:flex-row gap-3">
+                <a href="#lead" class="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-slate-900 px-5 py-3 font-semibold text-white hover:bg-slate-800 transition">
+                  <i class="fa-solid fa-paper-plane"></i>
+                  Запросить расчет
+                </a>
+                <a href="#faq" class="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-white px-5 py-3 font-semibold text-slate-900 border border-slate-200 hover:bg-slate-100 transition">
+                  <i class="fa-solid fa-circle-question"></i>
+                  Вопросы
+                </a>
+              </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-emerald-600 to-sky-600 p-5 text-white">
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-shield-halved text-xl"></i>
+                <p class="text-sm">
+                  <span class="font-bold">Без рисков:</span> тестируем на вашем сырье и показываем качество до внедрения.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <p class="mt-4 text-xs text-slate-500">
+            * Показатели приведены как пример оформления кейса на основе типовых KPI проекта.
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Trust / logos -->
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-4">
+    <div class="rounded-3xl bg-white border border-slate-200 shadow-soft p-6">
+      <div class="grid md:grid-cols-3 gap-4 items-center">
+        <div class="flex items-center gap-3">
+          <div class="h-12 w-12 rounded-2xl bg-emerald-100 flex items-center justify-center">
+            <i class="fa-solid fa-gears text-emerald-700 text-xl"></i>
+          </div>
+          <div>
+            <p class="font-bold">Под ключ</p>
+            <p class="text-sm text-slate-600">Проектирование, интеграция, запуск, обучение.</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="h-12 w-12 rounded-2xl bg-emerald-100 flex items-center justify-center">
+            <i class="fa-solid fa-microchip text-emerald-700 text-xl"></i>
+          </div>
+          <div>
+            <p class="font-bold">Точная сортировка</p>
+            <p class="text-sm text-slate-600">Оптическая технология и гибкие режимы.</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="h-12 w-12 rounded-2xl bg-emerald-100 flex items-center justify-center">
+            <i class="fa-solid fa-user-gear text-emerald-700 text-xl"></i>
+          </div>
+          <div>
+            <p class="font-bold">Инженерный подход</p>
+            <p class="text-sm text-slate-600">Погружение в процесс заказчика и KPI.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case -->
+  <main id="case" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14">
+    <div class="grid lg:grid-cols-12 gap-10">
+      <div class="lg:col-span-7">
+        <h2 class="text-2xl sm:text-3xl font-extrabold">Что было «до» и почему клиент терял деньги</h2>
+        <p class="mt-4 text-slate-700 leading-relaxed">
+          Клиент сталкивался с нестабильным качеством партий и высокой засорённостью. После первичной очистки
+          оставался заметный процент брака, а часть операций приходилось закрывать ручной сортировкой —
+          дорого и непредсказуемо по результату.
+        </p>
+
+        <div class="mt-6 grid sm:grid-cols-2 gap-4">
+          <div class="rounded-2xl bg-white border border-slate-200 shadow-soft p-5">
+            <div class="flex items-start gap-3">
+              <div class="h-10 w-10 rounded-xl bg-rose-100 flex items-center justify-center">
+                <i class="fa-solid fa-triangle-exclamation text-rose-600"></i>
+              </div>
+              <div>
+                <p class="font-bold">Брак и рекламации</p>
+                <p class="mt-1 text-sm text-slate-600">Партии «плавали» по качеству, сложнее удерживать цены.</p>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-2xl bg-white border border-slate-200 shadow-soft p-5">
+            <div class="flex items-start gap-3">
+              <div class="h-10 w-10 rounded-xl bg-rose-100 flex items-center justify-center">
+                <i class="fa-solid fa-hand text-rose-600"></i>
+              </div>
+              <div>
+                <p class="font-bold">Зависимость от персонала</p>
+                <p class="mt-1 text-sm text-slate-600">Ручная сортировка — дорого и нестабильно.</p>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-2xl bg-white border border-slate-200 shadow-soft p-5">
+            <div class="flex items-start gap-3">
+              <div class="h-10 w-10 rounded-xl bg-rose-100 flex items-center justify-center">
+                <i class="fa-solid fa-sack-xmark text-rose-600"></i>
+              </div>
+              <div>
+                <p class="font-bold">Потери годного сырья</p>
+                <p class="mt-1 text-sm text-slate-600">Старая схема отбраковывала «лишнее».</p>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-2xl bg-white border border-slate-200 shadow-soft p-5">
+            <div class="flex items-start gap-3">
+              <div class="h-10 w-10 rounded-xl bg-rose-100 flex items-center justify-center">
+                <i class="fa-solid fa-tags text-rose-600"></i>
+              </div>
+              <div>
+                <p class="font-bold">Не выйти в премиум</p>
+                <p class="mt-1 text-sm text-slate-600">Нельзя стабильно держать требования к чистоте.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="mt-12 text-xl font-extrabold">Как мы погрузились в задачу</h3>
+        <ul class="mt-4 space-y-3 text-slate-700">
+          <li class="flex gap-3">
+            <i class="fa-solid fa-check mt-1 text-emerald-600"></i>
+            <span><span class="font-semibold">Аудит линии</span>: посмотрели узкие места, где теряются деньги и качество.</span>
+          </li>
+          <li class="flex gap-3">
+            <i class="fa-solid fa-check mt-1 text-emerald-600"></i>
+            <span><span class="font-semibold">Тест-сортировка</span>: показали реальный результат на сырье заказчика.</span>
+          </li>
+          <li class="flex gap-3">
+            <i class="fa-solid fa-check mt-1 text-emerald-600"></i>
+            <span><span class="font-semibold">Расчет окупаемости</span>: собрали модель экономики «до/после» под объёмы.</span>
+          </li>
+          <li class="flex gap-3">
+            <i class="fa-solid fa-check mt-1 text-emerald-600"></i>
+            <span><span class="font-semibold">Подбор конфигурации</span>: заложили запас по производительности под рост.</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Sidebar CTA -->
+      <aside class="lg:col-span-5">
+        <div class="sticky top-6 space-y-4">
+          <div class="rounded-3xl bg-white border border-slate-200 shadow-soft p-6">
+            <h3 class="text-xl font-extrabold">Хотите такой же результат?</h3>
+            <p class="mt-2 text-slate-600">
+              Проведем экспресс-аудит, протестируем сортировку и предложим конфигурацию линии «под вашу задачу».
+            </p>
+
+            <div class="mt-5 grid gap-3">
+              <a href="#lead" class="inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-600 px-5 py-3 font-semibold text-white hover:bg-emerald-700 transition">
+                <i class="fa-solid fa-calendar-check"></i>
+                Записаться на консультацию
+              </a>
+              <a href="#lead" class="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-5 py-3 font-semibold text-slate-900 border border-slate-200 hover:bg-slate-100 transition">
+                <i class="fa-solid fa-flask"></i>
+                Запросить тест-сортировку
+              </a>
+              <a href="#lead" class="inline-flex items-center justify-center gap-2 rounded-xl bg-slate-900 px-5 py-3 font-semibold text-white hover:bg-slate-800 transition">
+                <i class="fa-solid fa-calculator"></i>
+                Получить расчет окупаемости
+              </a>
+            </div>
+
+            <div class="mt-5 rounded-2xl bg-slate-50 border border-slate-200 p-4 text-sm text-slate-700">
+              <div class="flex items-start gap-3">
+                <i class="fa-solid fa-lock mt-1 text-slate-500"></i>
+                <p><span class="font-semibold">Конфиденциально:</span> данные по сырью и экономике не публикуем.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-3xl bg-gradient-to-br from-slate-900 to-slate-800 text-white shadow-soft p-6">
+            <div class="flex items-center gap-3">
+              <div class="h-12 w-12 rounded-2xl bg-white/10 flex items-center justify-center">
+                <i class="fa-solid fa-headset text-xl"></i>
+              </div>
+              <div>
+                <p class="font-extrabold">Инженер на связи</p>
+                <p class="text-sm text-white/80">Ответим на вопросы и подберём решение</p>
+              </div>
+            </div>
+            <a href="#lead" class="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-emerald-500 px-5 py-3 font-semibold text-slate-900 hover:bg-emerald-400 transition">
+              <i class="fa-solid fa-message"></i>
+              Оставить заявку
+            </a>
+            <p class="mt-3 text-xs text-white/70">Обычно отвечаем в рабочее время в течение дня.</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Solution -->
+    <section class="mt-16">
+      <div class="flex items-end justify-between gap-4 flex-wrap">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold">Решение: внедрение линии «Сапсан» под ключ</h2>
+          <p class="mt-3 text-slate-700">Полный цикл — от проектирования до стабильного результата на линии.</p>
+        </div>
+        <a href="#lead" class="inline-flex items-center gap-2 rounded-xl bg-white px-5 py-3 font-semibold text-slate-900 border border-slate-200 hover:bg-slate-100 transition shadow-soft">
+          <i class="fa-solid fa-diagram-project"></i>
+          Получить схему линии
+        </a>
+      </div>
+
+      <div class="mt-8 grid md:grid-cols-3 gap-4">
+        <div class="rounded-3xl bg-white border border-slate-200 shadow-soft p-6">
+          <div class="h-12 w-12 rounded-2xl bg-emerald-100 flex items-center justify-center">
+            <i class="fa-solid fa-pencil-ruler text-emerald-700 text-xl"></i>
+          </div>
+          <h3 class="mt-4 font-extrabold text-lg">1) Проектирование</h3>
+          <ul class="mt-3 space-y-2 text-sm text-slate-600">
+            <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-600 mt-0.5"></i> Схема технологической цепочки</li>
+            <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-600 mt-0.5"></i> Интеграция в существующую линию</li>
+            <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-600 mt-0.5"></i> Оптимизация потоков сырья</li>
+          </ul>
+        </div>
+
+        <div class="rounded-3xl bg-white border border-slate-200 shadow-soft p-6">
+          <div class="h-12 w-12 rounded-2xl bg-emerald-100 flex items-center justify-center">
+            <i class="fa-solid fa-microchip text-emerald-700 text-xl"></i>
+          </div>
+          <h3 class="mt-4 font-extrabold text-lg">2) Подбор оборудования</h3>
+          <ul class="mt-3 space-y-2 text-sm text-slate-600">
+            <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-600 mt-0.5"></i> Фотосепаратор «Сапсан»</li>
+            <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-600 mt-0.5"></i> Модуль предварительной очистки</li>
+            <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-600 mt-0.5"></i> Компрессор и обвязка</li>
+          </ul>
+        </div>
+
+        <div class="rounded-3xl bg-white border border-slate-200 shadow-soft p-6">
+          <div class="h-12 w-12 rounded-2xl bg-emerald-100 flex items-center justify-center">
+            <i class="fa-solid fa-screwdriver-wrench text-emerald-700 text-xl"></i>
+          </div>
+          <h3 class="mt-4 font-extrabold text-lg">3) Внедрение</h3>
+          <ul class="mt-3 space-y-2 text-sm text-slate-600">
+            <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-600 mt-0.5"></i> Монтаж и пусконаладка</li>
+            <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-600 mt-0.5"></i> Обучение операторов</li>
+            <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-600 mt-0.5"></i> Настройка режимов сортировки</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results -->
+    <section id="results" class="mt-16">
+      <div class="rounded-3xl bg-white border border-slate-200 shadow-soft p-6 sm:p-10">
+        <div class="flex items-center justify-between gap-6 flex-wrap">
+          <div>
+            <h2 class="text-2xl sm:text-3xl font-extrabold">Результаты внедрения за 3 месяца</h2>
+            <p class="mt-3 text-slate-700">Цифры, которые важны производству: качество, потери, скорость и экономика.</p>
+          </div>
+          <a href="#lead" class="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-5 py-3 font-semibold text-white hover:bg-emerald-700 transition">
+            <i class="fa-solid fa-file-invoice"></i>
+            Получить расчёт под мой продукт
+          </a>
+        </div>
+
+        <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="rounded-2xl bg-slate-50 border border-slate-200 p-5">
+            <p class="text-sm text-slate-500">Маржинальность</p>
+            <p class="mt-1 text-3xl font-extrabold text-emerald-700">+38%</p>
+            <p class="mt-2 text-sm text-slate-600">Рост за счет стабильно высокого качества.</p>
+          </div>
+          <div class="rounded-2xl bg-slate-50 border border-slate-200 p-5">
+            <p class="text-sm text-slate-500">Потери годного сырья</p>
+            <p class="mt-1 text-3xl font-extrabold text-emerald-700">−22%</p>
+            <p class="mt-2 text-sm text-slate-600">Точная отбраковка «по делу».</p>
+          </div>
+          <div class="rounded-2xl bg-slate-50 border border-slate-200 p-5">
+            <p class="text-sm text-slate-500">Производительность</p>
+            <p class="mt-1 text-3xl font-extrabold text-emerald-700">+35%</p>
+            <p class="mt-2 text-sm text-slate-600">Стабильный темп без «узких мест».</p>
+          </div>
+          <div class="rounded-2xl bg-slate-50 border border-slate-200 p-5">
+            <p class="text-sm text-slate-500">Ручной труд</p>
+            <p class="mt-1 text-3xl font-extrabold text-emerald-700">~−50%</p>
+            <p class="mt-2 text-sm text-slate-600">Меньше зависимости от людей.</p>
+          </div>
+        </div>
+
+        <div class="mt-8 grid lg:grid-cols-3 gap-4">
+          <div class="rounded-2xl bg-white border border-slate-200 p-6">
+            <div class="flex items-center gap-2 font-bold">
+              <i class="fa-solid fa-award text-emerald-600"></i> Качество
+            </div>
+            <p class="mt-2 text-sm text-slate-600">
+              Продукт соответствует требованиям «премиум» и может продаваться дороже за счет чистоты и стабильности партии.
+            </p>
+          </div>
+          <div class="rounded-2xl bg-white border border-slate-200 p-6">
+            <div class="flex items-center gap-2 font-bold">
+              <i class="fa-solid fa-coins text-emerald-600"></i> Экономика
+            </div>
+            <p class="mt-2 text-sm text-slate-600">
+              Окупаемость подтверждается расчётом и результатом после запуска: меньше потерь и выше цена реализации.
+            </p>
+          </div>
+          <div class="rounded-2xl bg-white border border-slate-200 p-6">
+            <div class="flex items-center gap-2 font-bold">
+              <i class="fa-solid fa-people-group text-emerald-600"></i> Производство
+            </div>
+            <p class="mt-2 text-sm text-slate-600">
+              Операторы быстро осваивают оборудование, режимы сортировки настраиваются под продукт и задачу.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote -->
+    <section class="mt-14">
+      <div class="rounded-3xl bg-gradient-to-br from-emerald-600 to-sky-600 text-white p-8 sm:p-10 shadow-soft">
+        <div class="flex items-start gap-4">
+          <div class="h-12 w-12 rounded-2xl bg-white/15 flex items-center justify-center flex-shrink-0">
+            <i class="fa-solid fa-quote-left text-xl"></i>
+          </div>
+          <div>
+            <p class="text-lg sm:text-xl font-semibold leading-relaxed">
+              Мы не просто поставили фотосепаратор — мы перестроили технологию сортировки.
+              Это позволило клиенту выйти на новый уровень качества и прибыльности.
+            </p>
+            <p class="mt-3 text-white/80 text-sm">Комментарий инженера проекта • Смарт Грейд</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why us -->
+    <section class="mt-16">
+      <h2 class="text-2xl sm:text-3xl font-extrabold">Почему это сработало</h2>
+      <p class="mt-3 text-slate-700 max-w-3xl">
+        Результат получился за счет комбинации: инженерное погружение, тест на сырье клиента, правильная конфигурация линии и сопровождение после запуска.
+      </p>
+
+      <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="rounded-3xl bg-white border border-slate-200 shadow-soft p-6">
+          <i class="fa-solid fa-diagram-project text-emerald-600 text-2xl"></i>
+          <p class="mt-3 font-extrabold">Системный проект</p>
+          <p class="mt-2 text-sm text-slate-600">Делаем не «коробку», а рабочую технологию под KPI.</p>
+        </div>
+        <div class="rounded-3xl bg-white border border-slate-200 shadow-soft p-6">
+          <i class="fa-solid fa-flask-vial text-emerald-600 text-2xl"></i>
+          <p class="mt-3 font-extrabold">Тест-сортировка</p>
+          <p class="mt-2 text-sm text-slate-600">Показываем качество на вашем материале до внедрения.</p>
+        </div>
+        <div class="rounded-3xl bg-white border border-slate-200 shadow-soft p-6">
+          <i class="fa-solid fa-microchip text-emerald-600 text-2xl"></i>
+          <p class="mt-3 font-extrabold">Гибкие режимы</p>
+          <p class="mt-2 text-sm text-slate-600">Тонкая настройка под продукт, дефекты и цели.</p>
+        </div>
+        <div class="rounded-3xl bg-white border border-slate-200 shadow-soft p-6">
+          <i class="fa-solid fa-headset text-emerald-600 text-2xl"></i>
+          <p class="mt-3 font-extrabold">Поддержка</p>
+          <p class="mt-2 text-sm text-slate-600">Сопровождение после запуска и помощь инженеров.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lead form -->
+    <section id="lead" class="mt-16">
+      <div class="rounded-3xl bg-white border border-slate-200 shadow-soft overflow-hidden">
+        <div class="grid lg:grid-cols-12">
+          <div class="lg:col-span-7 p-6 sm:p-10">
+            <h2 class="text-2xl sm:text-3xl font-extrabold">Оставьте заявку — подберём решение под ваш продукт</h2>
+            <p class="mt-3 text-slate-700">
+              Мы проведем консультацию, предложим конфигурацию линии и при необходимости организуем тест-сортировку.
+            </p>
+
+            <form class="mt-7 grid sm:grid-cols-2 gap-4" onsubmit="event.preventDefault(); document.getElementById('thanks').classList.remove('hidden'); this.reset();">
+              <div class="sm:col-span-1">
+                <label class="block text-sm font-semibold text-slate-700">Имя</label>
+                <input required type="text" placeholder="Как к вам обращаться"
+                       class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 outline-none focus:ring-2 focus:ring-emerald-400 focus:border-emerald-400" />
+              </div>
+              <div class="sm:col-span-1">
+                <label class="block text-sm font-semibold text-slate-700">Телефон</label>
+                <input required type="tel" placeholder="+7 (___) ___-__-__"
+                       class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 outline-none focus:ring-2 focus:ring-emerald-400 focus:border-emerald-400" />
+              </div>
+              <div class="sm:col-span-2">
+                <label class="block text-sm font-semibold text-slate-700">Что сортируете и какая задача?</label>
+                <textarea rows="4" placeholder="Например: пшеница, требуется повысить чистоту и снизить потери"
+                          class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 outline-none focus:ring-2 focus:ring-emerald-400 focus:border-emerald-400"></textarea>
+              </div>
+
+              <div class="sm:col-span-2 flex flex-col sm:flex-row gap-3 items-center">
+                <button type="submit"
+                        class="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-600 px-6 py-3 font-semibold text-white hover:bg-emerald-700 transition shadow-soft">
+                  <i class="fa-solid fa-paper-plane"></i>
+                  Отправить заявку
+                </button>
+
+                <div class="text-xs text-slate-500">
+                  Нажимая «Отправить», вы соглашаетесь на обработку данных. (Текст можно заменить вашей политикой.)
+                </div>
+              </div>
+
+              <div id="thanks" class="hidden sm:col-span-2 rounded-2xl bg-emerald-50 border border-emerald-200 p-4 text-emerald-900">
+                <div class="flex items-start gap-3">
+                  <i class="fa-solid fa-circle-check mt-1 text-emerald-600"></i>
+                  <div>
+                    <p class="font-bold">Заявка отправлена</p>
+                    <p class="text-sm">Мы свяжемся с вами и уточним детали по продукту и линии.</p>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="lg:col-span-5 bg-slate-900 text-white p-6 sm:p-10">
+            <h3 class="text-xl font-extrabold">Что вы получите после заявки</h3>
+            <ul class="mt-5 space-y-4 text-white/90">
+              <li class="flex gap-3">
+                <i class="fa-solid fa-check mt-1 text-emerald-400"></i>
+                <span><span class="font-semibold">Консультацию инженера</span> по вашей задаче и продукту.</span>
+              </li>
+              <li class="flex gap-3">
+                <i class="fa-solid fa-check mt-1 text-emerald-400"></i>
+                <span><span class="font-semibold">Подбор конфигурации</span> фотосепаратора/линии под объёмы.</span>
+              </li>
+              <li class="flex gap-3">
+                <i class="fa-solid fa-check mt-1 text-emerald-400"></i>
+                <span><span class="font-semibold">Расчет окупаемости</span> и экономика «до/после».</span>
+              </li>
+              <li class="flex gap-3">
+                <i class="fa-solid fa-check mt-1 text-emerald-400"></i>
+                <span><span class="font-semibold">Тест-сортировку</span> на вашем сырье (при необходимости).</span>
+              </li>
+            </ul>
+
+            <div class="mt-8 rounded-2xl bg-white/10 p-5">
+              <div class="flex items-start gap-3">
+                <i class="fa-solid fa-circle-info mt-1 text-white/80"></i>
+                <p class="text-sm text-white/80">
+                  Подставьте реальные контакты компании (телефон, email, мессенджеры) в блоке футера ниже.
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-6 grid sm:grid-cols-2 gap-3">
+              <a href="#lead" class="inline-flex items-center justify-center gap-2 rounded-xl bg-white/10 px-5 py-3 font-semibold hover:bg-white/15 transition">
+                <i class="fa-solid fa-file-arrow-down"></i>
+                Скачать презентацию
+              </a>
+              <a href="#lead" class="inline-flex items-center justify-center gap-2 rounded-xl bg-white/10 px-5 py-3 font-semibold hover:bg-white/15 transition">
+                <i class="fa-solid fa-video"></i>
+                Запросить демо
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="mt-16">
+      <div class="flex items-end justify-between gap-4 flex-wrap">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold">Частые вопросы</h2>
+          <p class="mt-3 text-slate-700">Чтобы снять сомнения перед консультацией.</p>
+        </div>
+        <a href="#lead" class="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-5 py-3 font-semibold text-white hover:bg-emerald-700 transition">
+          <i class="fa-solid fa-phone"></i>
+          Связаться
+        </a>
+      </div>
+
+      <div class="mt-8 grid lg:grid-cols-2 gap-4">
+        <details class="group rounded-2xl bg-white border border-slate-200 shadow-soft p-6">
+          <summary class="flex cursor-pointer list-none items-center justify-between font-bold">
+            Сколько времени занимает внедрение?
+            <i class="fa-solid fa-chevron-down text-slate-400 group-open:rotate-180 transition"></i>
+          </summary>
+          <p class="mt-3 text-sm text-slate-600">
+            Срок зависит от готовности площадки и объёмов работ. Обычно это проектирование + поставка + монтаж и пусконаладка, после чего обучение операторов.
+          </p>
+        </details>
+
+        <details class="group rounded-2xl bg-white border border-slate-200 shadow-soft p-6">
+          <summary class="flex cursor-pointer list-none items-center justify-between font-bold">
+            Можно ли протестировать сортировку до покупки?
+            <i class="fa-solid fa-chevron-down text-slate-400 group-open:rotate-180 transition"></i>
+          </summary>
+          <p class="mt-3 text-sm text-slate-600">
+            Да. Мы рекомендуем тест-сортировку на сырье заказчика, чтобы вы заранее увидели качество и экономику.
+          </p>
+        </details>
+
+        <details class="group rounded-2xl bg-white border border-slate-200 shadow-soft p-6">
+          <summary class="flex cursor-pointer list-none items-center justify-between font-bold">
+            Что нужно для расчёта окупаемости?
+            <i class="fa-solid fa-chevron-down text-slate-400 group-open:rotate-180 transition"></i>
+          </summary>
+          <p class="mt-3 text-sm text-slate-600">
+            Достаточно продукта/культуры, объёмов, текущих потерь/брака и целевого качества. Остальное уточним на консультации.
+          </p>
+        </details>
+
+        <details class="group rounded-2xl bg-white border border-slate-200 shadow-soft p-6">
+          <summary class="flex cursor-pointer list-none items-center justify-between font-bold">
+            Вы сопровождаете после запуска?
+            <i class="fa-solid fa-chevron-down text-slate-400 group-open:rotate-180 transition"></i>
+          </summary>
+          <p class="mt-3 text-sm text-slate-600">
+            Да — помогаем с настройками режимов сортировки, обучением и поддержкой, чтобы результат был стабильным.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section id="cta" class="mt-16">
+      <div class="rounded-3xl bg-gradient-to-br from-slate-900 via-slate-900 to-slate-800 text-white shadow-soft p-8 sm:p-10">
+        <div class="grid lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7">
+            <h2 class="text-2xl sm:text-3xl font-extrabold">Готовы обсудить вашу задачу?</h2>
+            <p class="mt-3 text-white/80">
+              Расскажите, что сортируете и какой KPI важен: чистота, потери, скорость или экономика.
+              Мы предложим оптимальную конфигурацию и план внедрения.
+            </p>
+          </div>
+          <div class="lg:col-span-5">
+            <div class="grid sm:grid-cols-2 gap-3">
+              <a href="#lead" class="inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-500 px-6 py-3 font-semibold text-slate-900 hover:bg-emerald-400 transition">
+                <i class="fa-solid fa-comment-dots"></i>
+                Консультация
+              </a>
+              <a href="#lead" class="inline-flex items-center justify-center gap-2 rounded-xl bg-white/10 px-6 py-3 font-semibold hover:bg-white/15 transition">
+                <i class="fa-solid fa-flask"></i>
+                Тест-сортировка
+              </a>
+              <a href="#lead" class="inline-flex items-center justify-center gap-2 rounded-xl bg-white/10 px-6 py-3 font-semibold hover:bg-white/15 transition sm:col-span-2">
+                <i class="fa-solid fa-calculator"></i>
+                Расчёт окупаемости под мой продукт
+              </a>
+            </div>
+            <p class="mt-3 text-xs text-white/60">
+              Заполните форму — и мы свяжемся с вами, чтобы уточнить продукт и исходные данные.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 bg-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+      <div class="grid md:grid-cols-3 gap-8 items-start">
+        <div>
+          <div class="flex items-center gap-2 font-extrabold text-lg">
+            <i class="fa-solid fa-industry text-emerald-600"></i>
+            Смарт Грейд
+          </div>
+          <p class="mt-2 text-sm text-slate-600">
+            Разработка и поставка фотосепараторов «Сапсан». Инженерные решения под ключ.
+          </p>
+        </div>
+
+        <div>
+          <p class="font-bold">Навигация</p>
+          <ul class="mt-3 space-y-2 text-sm">
+            <li><a class="text-slate-700 hover:text-emerald-700" href="#case">Кейс</a></li>
+            <li><a class="text-slate-700 hover:text-emerald-700" href="#results">Результаты</a></li>
+            <li><a class="text-slate-700 hover:text-emerald-700" href="#faq">FAQ</a></li>
+            <li><a class="text-slate-700 hover:text-emerald-700" href="#lead">Заявка</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="font-bold">Контакты</p>
+          <div class="mt-3 space-y-2 text-sm text-slate-700">
+            <p class="flex items-center gap-2"><i class="fa-solid fa-phone text-slate-400"></i> +7 (___) ___-__-__</p>
+            <p class="flex items-center gap-2"><i class="fa-solid fa-envelope text-slate-400"></i> info@company.ru</p>
+            <p class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-slate-400"></i> Россия</p>
+          </div>
+          <div class="mt-4 flex gap-3">
+            <a class="h-10 w-10 rounded-xl border border-slate-200 flex items-center justify-center hover:bg-slate-50" href="#lead" aria-label="Telegram">
+              <i class="fa-brands fa-telegram text-slate-600"></i>
+            </a>
+            <a class="h-10 w-10 rounded-xl border border-slate-200 flex items-center justify-center hover:bg-slate-50" href="#lead" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp text-slate-600"></i>
+            </a>
+            <a class="h-10 w-10 rounded-xl border border-slate-200 flex items-center justify-center hover:bg-slate-50" href="#lead" aria-label="VK">
+              <i class="fa-brands fa-vk text-slate-600"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs text-slate-500">
+        <p>© <span id="year"></span> Смарт Грейд. Все права защищены.</p>
+        <p><a href="#" class="hover:text-emerald-700">Политика конфиденциальности</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
