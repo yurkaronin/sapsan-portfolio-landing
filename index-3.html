@@ -1,0 +1,915 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Кейс №1 — Фотосепарация «Сапсан» под ключ | Смарт Грейд</title>
+
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Icon font: Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          boxShadow: {
+            soft: '0 12px 34px rgba(0,0,0,.10)',
+            glow: '0 18px 60px rgba(16,185,129,.18)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* nicer focus */
+    :focus-visible { outline: 2px solid rgba(16,185,129,.65); outline-offset: 2px; }
+    /* smooth anchor scroll */
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+
+<body class="bg-slate-50 text-slate-900 font-sans">
+  <!-- Top bar -->
+  <div class="bg-slate-900 text-slate-100 sticky top-0 z-40">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between">
+      <div class="flex items-center gap-3 text-sm">
+        <span class="inline-flex items-center gap-2">
+          <i class="fa-solid fa-industry text-emerald-400"></i>
+          <span class="font-semibold">Смарт Грейд</span>
+        </span>
+        <span class="hidden sm:inline text-slate-300">• Фотосепараторы «Сапсан» • Внедрение под ключ</span>
+      </div>
+      <div class="flex items-center gap-4 text-sm">
+        <a href="#kpi" class="hidden md:inline hover:text-emerald-300">KPI</a>
+        <a href="#scheme" class="hidden md:inline hover:text-emerald-300">Схема</a>
+        <a href="#docs" class="hidden md:inline hover:text-emerald-300">Документы</a>
+        <a href="#timeline" class="hidden md:inline hover:text-emerald-300">Таймлайн</a>
+        <button data-open-modal class="inline-flex items-center gap-2 rounded-full bg-emerald-500 px-4 py-1.5 font-semibold text-slate-900 hover:bg-emerald-400 transition">
+          <i class="fa-solid fa-paper-plane"></i>
+          Оставить заявку
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <header class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-emerald-50 via-slate-50 to-sky-50"></div>
+    <div class="absolute -top-24 -right-24 h-80 w-80 rounded-full bg-emerald-200/40 blur-3xl"></div>
+    <div class="absolute -bottom-24 -left-24 h-80 w-80 rounded-full bg-sky-200/40 blur-3xl"></div>
+
+    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 lg:py-18">
+      <div class="grid lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-7">
+          <div class="inline-flex flex-wrap items-center gap-2 rounded-full bg-white px-4 py-2 shadow-soft border border-slate-200">
+            <span class="inline-flex items-center gap-2">
+              <i class="fa-solid fa-file-circle-check text-emerald-600"></i>
+              <span class="text-sm font-semibold text-slate-700">Кейс №1 • Инженерный</span>
+            </span>
+            <span class="text-sm text-slate-500">| Семеноводство (ЦФО) | Пшеница + мелкосемянные</span>
+          </div>
+
+          <h1 class="mt-5 text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">
+            Как мы стабилизировали качество семян и вывели партии в «премиум»
+            с помощью фотосепарации <span class="text-emerald-700">«Сапсан»</span> под ключ
+          </h1>
+
+          <p class="mt-5 text-lg text-slate-700 leading-relaxed">
+            Проект “не про покупку станка”, а про технологию и KPI: тест на сырье заказчика, инженерная интеграция,
+            пусконаладка, обучение и сопровождение после запуска.
+          </p>
+
+          <div class="mt-7 flex flex-col sm:flex-row gap-3">
+            <button data-open-modal class="inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-600 px-6 py-3 font-semibold text-white hover:bg-emerald-700 transition shadow-soft">
+              <i class="fa-solid fa-comment-dots"></i>
+              Консультация инженера
+            </button>
+            <a href="#scheme" class="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-6 py-3 font-semibold text-slate-800 hover:bg-slate-100 transition shadow-soft border border-slate-200">
+              <i class="fa-solid fa-diagram-project"></i>
+              Схема «было/стало»
+            </a>
+          </div>
+
+          <div class="mt-8 grid sm:grid-cols-3 gap-3">
+            <div class="rounded-2xl bg-white p-4 shadow-soft border border-slate-200">
+              <div class="flex items-center gap-2 text-emerald-700 font-bold">
+                <i class="fa-solid fa-star"></i> Премиум-класс
+              </div>
+              <p class="mt-2 text-sm text-slate-600">Стабильная партия по заданным критериям качества.</p>
+            </div>
+            <div class="rounded-2xl bg-white p-4 shadow-soft border border-slate-200">
+              <div class="flex items-center gap-2 text-emerald-700 font-bold">
+                <i class="fa-solid fa-user-gear"></i> Меньше ручного труда
+              </div>
+              <p class="mt-2 text-sm text-slate-600">0–1 человек вместо 2–4 в пиковые дни (контроль).</p>
+            </div>
+            <div class="rounded-2xl bg-white p-4 shadow-soft border border-slate-200">
+              <div class="flex items-center gap-2 text-emerald-700 font-bold">
+                <i class="fa-solid fa-arrow-trend-up"></i> Рост маржи
+              </div>
+              <p class="mt-2 text-sm text-slate-600">До +38% за счёт выхода в более дорогой сегмент.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- HERO CARD -->
+        <div class="lg:col-span-5">
+          <div class="rounded-3xl bg-white shadow-soft border border-slate-200 overflow-hidden">
+            <div class="p-6 sm:p-8">
+              <div class="flex items-center justify-between">
+                <div>
+                  <p class="text-sm text-slate-500">Цель проекта</p>
+                  <p class="text-xl font-extrabold">Повторяемость качества + экономика</p>
+                </div>
+                <div class="h-12 w-12 rounded-2xl bg-emerald-100 flex items-center justify-center">
+                  <i class="fa-solid fa-seedling text-emerald-700 text-xl"></i>
+                </div>
+              </div>
+
+              <div class="mt-6 grid gap-3">
+                <div class="flex items-start gap-3">
+                  <i class="fa-solid fa-bullseye mt-1 text-slate-400"></i>
+                  <p class="text-slate-700"><span class="font-semibold">Задача:</span> убрать «тонкие» дефекты и стабилизировать партию</p>
+                </div>
+                <div class="flex items-start gap-3">
+                  <i class="fa-solid fa-triangle-exclamation mt-1 text-slate-400"></i>
+                  <p class="text-slate-700"><span class="font-semibold">Боль:</span> ручное “спасение” партий + нестабильный результат</p>
+                </div>
+                <div class="flex items-start gap-3">
+                  <i class="fa-solid fa-shield-halved mt-1 text-slate-400"></i>
+                  <p class="text-slate-700"><span class="font-semibold">Подход:</span> тест → проект → монтаж → ПНР → обучение → сопровождение</p>
+                </div>
+              </div>
+
+              <div class="mt-7 rounded-2xl bg-slate-50 p-4 border border-slate-200">
+                <div class="flex items-center gap-2 font-bold text-slate-800">
+                  <i class="fa-solid fa-chart-simple text-emerald-600"></i>
+                  KPI до/после (сводно)
+                </div>
+                <div class="mt-4 grid grid-cols-2 gap-3">
+                  <div class="rounded-xl bg-white p-3 border border-slate-200">
+                    <p class="text-xs text-slate-500">Ручной труд</p>
+                    <p class="text-lg font-extrabold text-emerald-700"><span data-count="4">0</span>→<span data-count="1">0</span></p>
+                    <p class="text-xs text-slate-500 mt-1">2–4 → 0–1</p>
+                  </div>
+                  <div class="rounded-xl bg-white p-3 border border-slate-200">
+                    <p class="text-xs text-slate-500">Потери годного</p>
+                    <p class="text-lg font-extrabold text-emerald-700"><span data-count="25">0</span>%</p>
+                    <p class="text-xs text-slate-500 mt-1">−15…25%</p>
+                  </div>
+                  <div class="rounded-xl bg-white p-3 border border-slate-200">
+                    <p class="text-xs text-slate-500">Простои</p>
+                    <p class="text-lg font-extrabold text-emerald-700">↓ минимум</p>
+                    <p class="text-xs text-slate-500 mt-1">повторы → минимум</p>
+                  </div>
+                  <div class="rounded-xl bg-white p-3 border border-slate-200">
+                    <p class="text-xs text-slate-500">Маржинальность</p>
+                    <p class="text-lg font-extrabold text-emerald-700">до <span data-count="38">0</span>%</p>
+                    <p class="text-xs text-slate-500 mt-1">рост сегмента</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-7 flex flex-col sm:flex-row gap-3">
+                <button data-open-modal class="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-slate-900 px-5 py-3 font-semibold text-white hover:bg-slate-800 transition">
+                  <i class="fa-solid fa-calculator"></i>
+                  Получить расчёт
+                </button>
+                <a href="#gallery" class="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-white px-5 py-3 font-semibold text-slate-900 border border-slate-200 hover:bg-slate-100 transition">
+                  <i class="fa-solid fa-images"></i>
+                  Фото-галерея
+                </a>
+              </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-emerald-600 to-sky-600 p-5 text-white">
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-helmet-safety text-xl"></i>
+                <p class="text-sm">
+                  <span class="font-bold">Инженерный проект под ключ:</span> результат закрепляем обучением и сопровождением.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <p class="mt-4 text-xs text-slate-500">
+            * Показатели — пример инженерного формата; точные цифры зависят от культуры, дефектов и входного сырья.
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- KPI -->
+  <section id="kpi" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14">
+    <div class="rounded-3xl bg-white border border-slate-200 shadow-soft p-6 sm:p-10">
+      <div class="flex items-end justify-between gap-6 flex-wrap">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold">KPI проекта: «до / после»</h2>
+          <p class="mt-3 text-slate-700 max-w-3xl">
+            Что изменилось в повторяемости качества, трудозатратах, потерях и простоях.
+          </p>
+        </div>
+        <button data-open-modal class="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-5 py-3 font-semibold text-white hover:bg-emerald-700 transition shadow-soft">
+          <i class="fa-solid fa-file-invoice"></i>
+          Запросить расчёт под мой продукт
+        </button>
+      </div>
+
+      <div class="mt-8 overflow-x-auto">
+        <table class="w-full min-w-[720px] border-separate border-spacing-0">
+          <thead>
+            <tr class="text-left">
+              <th class="p-4 bg-slate-50 border border-slate-200 rounded-tl-2xl">Показатель</th>
+              <th class="p-4 bg-slate-50 border-t border-b border-slate-200">До</th>
+              <th class="p-4 bg-slate-50 border border-slate-200 rounded-tr-2xl">После</th>
+            </tr>
+          </thead>
+          <tbody class="text-sm">
+            <tr>
+              <td class="p-4 border-l border-b border-slate-200 bg-white font-semibold">Стабильность качества партии</td>
+              <td class="p-4 border-b border-slate-200 bg-white text-slate-700">Зависела от партии/оператора</td>
+              <td class="p-4 border-r border-b border-slate-200 bg-white text-slate-700">
+                <span class="inline-flex items-center gap-2 font-semibold text-emerald-700"><i class="fa-solid fa-circle-check"></i> Повторяемая по критериям</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="p-4 border-l border-b border-slate-200 bg-white font-semibold">Ручные операции</td>
+              <td class="p-4 border-b border-slate-200 bg-white text-slate-700">2–4 человека</td>
+              <td class="p-4 border-r border-b border-slate-200 bg-white text-slate-700"><span class="font-semibold">0–1</span> (контроль)</td>
+            </tr>
+            <tr>
+              <td class="p-4 border-l border-b border-slate-200 bg-white font-semibold">Потери годного</td>
+              <td class="p-4 border-b border-slate-200 bg-white text-slate-700">Повышенные</td>
+              <td class="p-4 border-r border-b border-slate-200 bg-white text-slate-700"><span class="font-semibold text-emerald-700">−15…25%</span></td>
+            </tr>
+            <tr>
+              <td class="p-4 border-l border-b border-slate-200 bg-white font-semibold">Простои / повторы</td>
+              <td class="p-4 border-b border-slate-200 bg-white text-slate-700">Регулярные</td>
+              <td class="p-4 border-r border-b border-slate-200 bg-white text-slate-700">Минимум</td>
+            </tr>
+            <tr>
+              <td class="p-4 border-l border-b border-slate-200 bg-white font-semibold rounded-bl-2xl">Маржинальность</td>
+              <td class="p-4 border-b border-slate-200 bg-white text-slate-700">Ограничена классом</td>
+              <td class="p-4 border-r border-b border-slate-200 bg-white text-slate-700 rounded-br-2xl">Рост до <span class="font-semibold text-emerald-700">+38%</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCHEME (with tiny SVG) -->
+  <section id="scheme" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14">
+    <div class="flex items-end justify-between gap-6 flex-wrap">
+      <div>
+        <h2 class="text-2xl sm:text-3xl font-extrabold">Схема линии: «было / стало»</h2>
+        <p class="mt-3 text-slate-700 max-w-3xl">
+          Ключевое изменение — добавили финальный этап фотосепарации, который стабилизирует качество партии.
+        </p>
+      </div>
+      <button data-open-modal class="inline-flex items-center gap-2 rounded-xl bg-white px-5 py-3 font-semibold text-slate-900 border border-slate-200 hover:bg-slate-100 transition shadow-soft">
+        <i class="fa-solid fa-diagram-project"></i>
+        Получить схему под мою площадку
+      </button>
+    </div>
+
+    <div class="mt-8 grid lg:grid-cols-2 gap-4">
+      <div class="rounded-3xl bg-white border border-slate-200 shadow-soft p-6 sm:p-8">
+        <div class="flex items-center justify-between">
+          <div class="inline-flex items-center gap-2 font-extrabold text-lg">
+            <span class="h-8 w-8 rounded-xl bg-rose-100 flex items-center justify-center"><i class="fa-solid fa-arrow-left text-rose-600"></i></span>
+            Было
+          </div>
+          <span class="text-sm text-slate-500">разрывы • пересыпания • “спасение”</span>
+        </div>
+
+        <div class="mt-6 space-y-3">
+          <div class="rounded-2xl bg-slate-50 border border-slate-200 p-4">
+            <p class="font-bold">1) Приёмка сырья</p>
+            <p class="text-sm text-slate-600">партии разного качества</p>
+          </div>
+          <div class="rounded-2xl bg-slate-50 border border-slate-200 p-4">
+            <p class="font-bold">2) Механика: очистка/калибровка</p>
+            <p class="text-sm text-slate-600">“тонкие” дефекты часто остаются</p>
+          </div>
+          <div class="rounded-2xl bg-slate-50 border border-slate-200 p-4">
+            <p class="font-bold">3) Контроль качества</p>
+            <p class="text-sm text-slate-600">часть партий “не проходит”</p>
+          </div>
+          <div class="rounded-2xl bg-rose-50 border border-rose-200 p-4">
+            <p class="font-bold text-rose-800">4) Ручная досортировка / повторы</p>
+            <p class="text-sm text-rose-700">простои и человеческий фактор</p>
+          </div>
+          <div class="rounded-2xl bg-slate-50 border border-slate-200 p-4">
+            <p class="font-bold">5) Фасовка/склад</p>
+            <p class="text-sm text-slate-600">качество нестабильно</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded-3xl bg-white border border-slate-200 shadow-soft p-6 sm:p-8">
+        <div class="flex items-center justify-between">
+          <div class="inline-flex items-center gap-2 font-extrabold text-lg">
+            <span class="h-8 w-8 rounded-xl bg-emerald-100 flex items-center justify-center"><i class="fa-solid fa-arrow-right text-emerald-700"></i></span>
+            Стало
+          </div>
+          <span class="text-sm text-slate-500">повторяемость • минимум простоев</span>
+        </div>
+
+        <div class="mt-6 space-y-3">
+          <div class="rounded-2xl bg-slate-50 border border-slate-200 p-4">
+            <p class="font-bold">1) Приёмка сырья</p>
+            <p class="text-sm text-slate-600">маршрут партии задан</p>
+          </div>
+          <div class="rounded-2xl bg-slate-50 border border-slate-200 p-4">
+            <p class="font-bold">2) Механика: подготовка продукта</p>
+            <p class="text-sm text-slate-600">подводим к финальной доводке</p>
+          </div>
+          <div class="rounded-2xl bg-emerald-50 border border-emerald-200 p-4">
+            <p class="font-bold text-emerald-800">3) Фотосепарация «Сапсан»</p>
+            <p class="text-sm text-emerald-700">убираем “тонкие” дефекты → стабильный класс</p>
+          </div>
+          <div class="rounded-2xl bg-slate-50 border border-slate-200 p-4">
+            <p class="font-bold">4) Лаб. контроль</p>
+            <p class="text-sm text-slate-600">подтверждение результата</p>
+          </div>
+          <div class="rounded-2xl bg-slate-50 border border-slate-200 p-4">
+            <p class="font-bold">5) Фасовка/склад</p>
+            <p class="text-sm text-slate-600">партия по стандарту</p>
+          </div>
+        </div>
+
+        <!-- tiny SVG -->
+        <div class="mt-6 rounded-2xl bg-slate-900 text-white p-5">
+          <p class="font-extrabold mb-3">Короткая схема потока (SVG)</p>
+          <svg viewBox="0 0 900 130" class="w-full h-auto">
+            <defs>
+              <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+                <path d="M0,0 L10,3 L0,6 Z" fill="rgba(255,255,255,.85)"></path>
+              </marker>
+            </defs>
+            <g fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.35)" stroke-width="2">
+              <rect x="10" y="30" rx="16" ry="16" width="160" height="70"></rect>
+              <rect x="200" y="30" rx="16" ry="16" width="160" height="70"></rect>
+              <rect x="390" y="20" rx="16" ry="16" width="190" height="90"></rect>
+              <rect x="610" y="30" rx="16" ry="16" width="140" height="70"></rect>
+              <rect x="780" y="30" rx="16" ry="16" width="110" height="70"></rect>
+              <line x1="170" y1="65" x2="200" y2="65" marker-end="url(#arrow)"></line>
+              <line x1="360" y1="65" x2="390" y2="65" marker-end="url(#arrow)"></line>
+              <line x1="580" y1="65" x2="610" y2="65" marker-end="url(#arrow)"></line>
+              <line x1="750" y1="65" x2="780" y2="65" marker-end="url(#arrow)"></line>
+            </g>
+            <g fill="rgba(255,255,255,.92)" font-family="Inter, system-ui" font-size="14" font-weight="700">
+              <text x="30" y="70">Приёмка</text>
+              <text x="30" y="90" font-weight="500" fill="rgba(255,255,255,.75)">сырья</text>
+
+              <text x="220" y="70">Механика</text>
+              <text x="220" y="90" font-weight="500" fill="rgba(255,255,255,.75)">очистка/калибр.</text>
+
+              <text x="410" y="60">Фотосепарация</text>
+              <text x="410" y="82" font-weight="800" fill="rgba(16,185,129,.95)">«Сапсан»</text>
+              <text x="410" y="103" font-weight="500" fill="rgba(255,255,255,.75)">финальная доводка</text>
+
+              <text x="628" y="70">Лаб.</text>
+              <text x="628" y="90" font-weight="500" fill="rgba(255,255,255,.75)">контроль</text>
+
+              <text x="795" y="70">Склад</text>
+              <text x="795" y="90" font-weight="500" fill="rgba(255,255,255,.75)">/фасовка</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOCS / ARTIFACTS -->
+  <section id="docs" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14">
+    <div class="rounded-3xl bg-white border border-slate-200 shadow-soft p-6 sm:p-10">
+      <div class="flex items-end justify-between gap-6 flex-wrap">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold">Артефакты проекта</h2>
+          <p class="mt-3 text-slate-700 max-w-3xl">
+            Инженерная часть, которая обычно остаётся “за кадром”: протокол теста, чек-листы запуска, регламенты.
+          </p>
+        </div>
+        <button data-open-modal class="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-5 py-3 font-semibold text-white hover:bg-emerald-700 transition shadow-soft">
+          <i class="fa-solid fa-folder-open"></i>
+          Запросить комплект документов
+        </button>
+      </div>
+
+      <div class="mt-8 grid md:grid-cols-3 gap-4">
+        <div class="rounded-3xl bg-slate-50 border border-slate-200 p-6">
+          <div class="flex items-center gap-3">
+            <div class="h-12 w-12 rounded-2xl bg-white border border-slate-200 flex items-center justify-center">
+              <i class="fa-solid fa-flask-vial text-emerald-600 text-xl"></i>
+            </div>
+            <div>
+              <p class="font-extrabold">Протокол тест-сортировки</p>
+              <p class="text-sm text-slate-600">партия “типовая” и “проблемная”</p>
+            </div>
+          </div>
+          <ul class="mt-4 space-y-2 text-sm text-slate-700">
+            <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-600 mt-0.5"></i> режимы и пороги</li>
+            <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-600 mt-0.5"></i> выход/отход</li>
+            <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-600 mt-0.5"></i> критерии качества</li>
+          </ul>
+        </div>
+
+        <div class="rounded-3xl bg-slate-50 border border-slate-200 p-6">
+          <div class="flex items-center gap-3">
+            <div class="h-12 w-12 rounded-2xl bg-white border border-slate-200 flex items-center justify-center">
+              <i class="fa-solid fa-clipboard-check text-emerald-600 text-xl"></i>
+            </div>
+            <div>
+              <p class="font-extrabold">Чек-лист ПНР</p>
+              <p class="text-sm text-slate-600">монтаж → запуск → контроль</p>
+            </div>
+          </div>
+          <ul class="mt-4 space-y-2 text-sm text-slate-700">
+            <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-600 mt-0.5"></i> безопасность</li>
+            <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-600 mt-0.5"></i> проверка узлов</li>
+            <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-600 mt-0.5"></i> контроль качества</li>
+          </ul>
+        </div>
+
+        <div class="rounded-3xl bg-slate-50 border border-slate-200 p-6">
+          <div class="flex items-center gap-3">
+            <div class="h-12 w-12 rounded-2xl bg-white border border-slate-200 flex items-center justify-center">
+              <i class="fa-solid fa-book text-emerald-600 text-xl"></i>
+            </div>
+            <div>
+              <p class="font-extrabold">Регламент оператора</p>
+              <p class="text-sm text-slate-600">как держать KPI</p>
+            </div>
+          </div>
+          <ul class="mt-4 space-y-2 text-sm text-slate-700">
+            <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-600 mt-0.5"></i> смена режимов</li>
+            <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-600 mt-0.5"></i> контроль партии</li>
+            <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-600 mt-0.5"></i> типовые дефекты</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section id="timeline" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-14">
+    <div class="flex items-end justify-between gap-6 flex-wrap">
+      <div>
+        <h2 class="text-2xl sm:text-3xl font-extrabold">Таймлайн проекта: 10 недель до устойчивого результата</h2>
+        <p class="mt-3 text-slate-700 max-w-3xl">
+          Тест → проектирование → монтаж → ПНР → обучение → сопровождение на партиях.
+        </p>
+      </div>
+      <button data-open-modal class="inline-flex items-center gap-2 rounded-xl bg-white px-5 py-3 font-semibold text-slate-900 border border-slate-200 hover:bg-slate-100 transition shadow-soft">
+        <i class="fa-solid fa-calendar-check"></i>
+        Обсудить сроки внедрения
+      </button>
+    </div>
+
+    <div class="mt-8 grid lg:grid-cols-2 gap-4">
+      <div class="rounded-3xl bg-white border border-slate-200 shadow-soft p-6">
+        <ol class="space-y-4">
+          <li class="flex gap-3">
+            <div class="h-10 w-10 rounded-2xl bg-emerald-100 flex items-center justify-center font-extrabold text-emerald-700">1</div>
+            <div>
+              <p class="font-bold">Неделя 1 — Сбор данных</p>
+              <p class="text-sm text-slate-600">Фото/видео линии, дефекты, цели качества и экономики.</p>
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <div class="h-10 w-10 rounded-2xl bg-emerald-100 flex items-center justify-center font-extrabold text-emerald-700">2</div>
+            <div>
+              <p class="font-bold">Неделя 2 — Тест-сортировка</p>
+              <p class="text-sm text-slate-600">Протокол, режимы, оценка выхода/отхода.</p>
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <div class="h-10 w-10 rounded-2xl bg-emerald-100 flex items-center justify-center font-extrabold text-emerald-700">3</div>
+            <div>
+              <p class="font-bold">Неделя 3 — Проектирование интеграции</p>
+              <p class="text-sm text-slate-600">Схема врезки, компоновка, согласование.</p>
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <div class="h-10 w-10 rounded-2xl bg-emerald-100 flex items-center justify-center font-extrabold text-emerald-700">4</div>
+            <div>
+              <p class="font-bold">Недели 4–5 — Монтаж</p>
+              <p class="text-sm text-slate-600">Подключение, обвязка, безопасность.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <div class="rounded-3xl bg-white border border-slate-200 shadow-soft p-6">
+        <ol class="space-y-4">
+          <li class="flex gap-3">
+            <div class="h-10 w-10 rounded-2xl bg-sky-100 flex items-center justify-center font-extrabold text-sky-700">5</div>
+            <div>
+              <p class="font-bold">Неделя 6 — ПНР</p>
+              <p class="text-sm text-slate-600">Доводка режимов под дефекты партии.</p>
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <div class="h-10 w-10 rounded-2xl bg-sky-100 flex items-center justify-center font-extrabold text-sky-700">6</div>
+            <div>
+              <p class="font-bold">Неделя 6 — Обучение</p>
+              <p class="text-sm text-slate-600">Алгоритм смены режимов под разные партии.</p>
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <div class="h-10 w-10 rounded-2xl bg-sky-100 flex items-center justify-center font-extrabold text-sky-700">7</div>
+            <div>
+              <p class="font-bold">Недели 7–10 — Сопровождение</p>
+              <p class="text-sm text-slate-600">Закрепление результата на разных партиях/культурах.</p>
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <div class="h-10 w-10 rounded-2xl bg-slate-900 text-white flex items-center justify-center font-extrabold">✓</div>
+            <div>
+              <p class="font-bold">Итог — устойчивый процесс</p>
+              <p class="text-sm text-slate-600">Повторяемость качества и минимум “пожаров”.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-14">
+    <div class="flex items-end justify-between gap-6 flex-wrap">
+      <div>
+        <h2 class="text-2xl sm:text-3xl font-extrabold">Фото-галерея проекта</h2>
+        <p class="mt-3 text-slate-700 max-w-3xl">
+          Клик по карточке откроет просмотр (lightbox). Сейчас — плейсхолдеры.
+        </p>
+      </div>
+      <button data-open-modal class="inline-flex items-center gap-2 rounded-xl bg-white px-5 py-3 font-semibold text-slate-900 border border-slate-200 hover:bg-slate-100 transition shadow-soft">
+        <i class="fa-solid fa-upload"></i>
+        Отправить фото
+      </button>
+    </div>
+
+    <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <button class="group text-left rounded-3xl bg-white border border-slate-200 shadow-soft overflow-hidden" data-lightbox data-title="«До»: узкие места и ручная досортировка">
+        <div class="aspect-[4/3] bg-gradient-to-br from-slate-200 to-slate-100 flex items-center justify-center">
+          <i class="fa-solid fa-camera text-slate-400 text-3xl group-hover:scale-110 transition"></i>
+        </div>
+        <div class="p-4">
+          <p class="font-bold">«До»</p>
+          <p class="text-sm text-slate-600">Узкие места, ручная досортировка</p>
+        </div>
+      </button>
+
+      <button class="group text-left rounded-3xl bg-white border border-slate-200 shadow-soft overflow-hidden" data-lightbox data-title="Тест-сортировка: сырьё заказчика">
+        <div class="aspect-[4/3] bg-gradient-to-br from-emerald-200/60 to-slate-100 flex items-center justify-center">
+          <i class="fa-solid fa-flask-vial text-emerald-700 text-3xl group-hover:scale-110 transition"></i>
+        </div>
+        <div class="p-4">
+          <p class="font-bold">Тест-сортировка</p>
+          <p class="text-sm text-slate-600">Сырьё заказчика, протокол</p>
+        </div>
+      </button>
+
+      <button class="group text-left rounded-3xl bg-white border border-slate-200 shadow-soft overflow-hidden" data-lightbox data-title="Монтаж: сборка и подключение">
+        <div class="aspect-[4/3] bg-gradient-to-br from-sky-200/60 to-slate-100 flex items-center justify-center">
+          <i class="fa-solid fa-screwdriver-wrench text-sky-700 text-3xl group-hover:scale-110 transition"></i>
+        </div>
+        <div class="p-4">
+          <p class="font-bold">Монтаж</p>
+          <p class="text-sm text-slate-600">Сборка, подключение, обвязка</p>
+        </div>
+      </button>
+
+      <button class="group text-left rounded-3xl bg-white border border-slate-200 shadow-soft overflow-hidden" data-lightbox data-title="«После»: стабильная партия">
+        <div class="aspect-[4/3] bg-gradient-to-br from-slate-900 to-slate-700 flex items-center justify-center">
+          <i class="fa-solid fa-award text-white text-3xl group-hover:scale-110 transition"></i>
+        </div>
+        <div class="p-4">
+          <p class="font-bold">«После»</p>
+          <p class="text-sm text-slate-600">Чистый продукт, стабильная партия</p>
+        </div>
+      </button>
+    </div>
+  </section>
+
+  <!-- LEAD (as section + modal triggers) -->
+  <section id="lead" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-14">
+    <div class="rounded-3xl bg-white border border-slate-200 shadow-soft overflow-hidden">
+      <div class="grid lg:grid-cols-12">
+        <div class="lg:col-span-7 p-6 sm:p-10">
+          <h2 class="text-2xl sm:text-3xl font-extrabold">Оставьте заявку — подберём решение под ваш KPI</h2>
+          <p class="mt-3 text-slate-700">
+            Культура, объёмы, дефекты, требования к классу партии и ограничения по площадке — и мы подготовим схему внедрения.
+          </p>
+
+          <form class="mt-7 grid sm:grid-cols-2 gap-4" id="leadForm"
+                onsubmit="event.preventDefault(); window.__showThanks(); this.reset();">
+            <div>
+              <label class="block text-sm font-semibold text-slate-700">Имя</label>
+              <input required type="text" placeholder="Как к вам обращаться"
+                     class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 outline-none focus:ring-2 focus:ring-emerald-400 focus:border-emerald-400" />
+            </div>
+            <div>
+              <label class="block text-sm font-semibold text-slate-700">Телефон</label>
+              <input required type="tel" placeholder="+7 (___) ___-__-__"
+                     class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 outline-none focus:ring-2 focus:ring-emerald-400 focus:border-emerald-400" />
+            </div>
+            <div class="sm:col-span-2">
+              <label class="block text-sm font-semibold text-slate-700">Культура, объёмы, дефекты</label>
+              <textarea rows="4" placeholder="Например: пшеница, 3 т/ч, визуальные дефекты/примеси, нужна повторяемость партии"
+                        class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 outline-none focus:ring-2 focus:ring-emerald-400 focus:border-emerald-400"></textarea>
+            </div>
+
+            <div class="sm:col-span-2 flex flex-col sm:flex-row gap-3 items-center">
+              <button type="submit"
+                      class="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-600 px-6 py-3 font-semibold text-white hover:bg-emerald-700 transition shadow-soft">
+                <i class="fa-solid fa-paper-plane"></i>
+                Отправить заявку
+              </button>
+              <div class="text-xs text-slate-500">
+                Нажимая «Отправить», вы соглашаетесь на обработку данных.
+              </div>
+            </div>
+
+            <div id="thanks" class="hidden sm:col-span-2 rounded-2xl bg-emerald-50 border border-emerald-200 p-4 text-emerald-900">
+              <div class="flex items-start gap-3">
+                <i class="fa-solid fa-circle-check mt-1 text-emerald-600"></i>
+                <div>
+                  <p class="font-bold">Заявка отправлена</p>
+                  <p class="text-sm">Мы свяжемся с вами и уточним исходные данные.</p>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="lg:col-span-5 bg-slate-900 text-white p-6 sm:p-10">
+          <h3 class="text-xl font-extrabold">Что вы получите после заявки</h3>
+          <ul class="mt-5 space-y-4 text-white/90">
+            <li class="flex gap-3">
+              <i class="fa-solid fa-check mt-1 text-emerald-400"></i>
+              <span><span class="font-semibold">Консультацию инженера</span> по KPI и технологии.</span>
+            </li>
+            <li class="flex gap-3">
+              <i class="fa-solid fa-check mt-1 text-emerald-400"></i>
+              <span><span class="font-semibold">Тест-сортировку</span> на вашей партии (по возможности).</span>
+            </li>
+            <li class="flex gap-3">
+              <i class="fa-solid fa-check mt-1 text-emerald-400"></i>
+              <span><span class="font-semibold">Схему внедрения</span> и требования к площадке.</span>
+            </li>
+            <li class="flex gap-3">
+              <i class="fa-solid fa-check mt-1 text-emerald-400"></i>
+              <span><span class="font-semibold">Расчёт экономики</span> (выход/потери/эффект).</span>
+            </li>
+          </ul>
+
+          <div class="mt-8 rounded-2xl bg-white/10 p-5">
+            <div class="flex items-start gap-3">
+              <i class="fa-solid fa-circle-info mt-1 text-white/80"></i>
+              <p class="text-sm text-white/80">
+                Подставьте реальные контакты в футере: телефон, email, мессенджеры.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-6 grid sm:grid-cols-2 gap-3">
+            <button data-open-modal class="inline-flex items-center justify-center gap-2 rounded-xl bg-white/10 px-5 py-3 font-semibold hover:bg-white/15 transition">
+              <i class="fa-solid fa-file-arrow-down"></i>
+              Запросить КП
+            </button>
+            <button data-open-modal class="inline-flex items-center justify-center gap-2 rounded-xl bg-white/10 px-5 py-3 font-semibold hover:bg-white/15 transition">
+              <i class="fa-solid fa-video"></i>
+              Запросить демо
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 bg-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+      <div class="grid md:grid-cols-3 gap-8 items-start">
+        <div>
+          <div class="flex items-center gap-2 font-extrabold text-lg">
+            <i class="fa-solid fa-industry text-emerald-600"></i>
+            Смарт Грейд
+          </div>
+          <p class="mt-2 text-sm text-slate-600">
+            Фотосепараторы «Сапсан» и инженерные решения под ключ: тест → проект → монтаж → ПНР → обучение → сопровождение.
+          </p>
+        </div>
+
+        <div>
+          <p class="font-bold">Навигация</p>
+          <ul class="mt-3 space-y-2 text-sm">
+            <li><a class="text-slate-700 hover:text-emerald-700" href="#kpi">KPI</a></li>
+            <li><a class="text-slate-700 hover:text-emerald-700" href="#scheme">Схема</a></li>
+            <li><a class="text-slate-700 hover:text-emerald-700" href="#docs">Документы</a></li>
+            <li><a class="text-slate-700 hover:text-emerald-700" href="#timeline">Таймлайн</a></li>
+            <li><a class="text-slate-700 hover:text-emerald-700" href="#gallery">Галерея</a></li>
+            <li><a class="text-slate-700 hover:text-emerald-700" href="#lead">Заявка</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="font-bold">Контакты</p>
+          <div class="mt-3 space-y-2 text-sm text-slate-700">
+            <p class="flex items-center gap-2"><i class="fa-solid fa-phone text-slate-400"></i> +7 (___) ___-__-__</p>
+            <p class="flex items-center gap-2"><i class="fa-solid fa-envelope text-slate-400"></i> info@company.ru</p>
+            <p class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-slate-400"></i> Россия</p>
+          </div>
+          <div class="mt-4 flex gap-3">
+            <a class="h-10 w-10 rounded-xl border border-slate-200 flex items-center justify-center hover:bg-slate-50" href="#lead" aria-label="Telegram">
+              <i class="fa-brands fa-telegram text-slate-600"></i>
+            </a>
+            <a class="h-10 w-10 rounded-xl border border-slate-200 flex items-center justify-center hover:bg-slate-50" href="#lead" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp text-slate-600"></i>
+            </a>
+            <a class="h-10 w-10 rounded-xl border border-slate-200 flex items-center justify-center hover:bg-slate-50" href="#lead" aria-label="VK">
+              <i class="fa-brands fa-vk text-slate-600"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs text-slate-500">
+        <p>© <span id="year"></span> Смарт Грейд. Все права защищены.</p>
+        <p><a href="#" class="hover:text-emerald-700">Политика конфиденциальности</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Sticky CTA -->
+  <div class="fixed inset-x-0 bottom-0 z-40 bg-white/90 backdrop-blur border-t border-slate-200 lg:hidden">
+    <div class="mx-auto max-w-7xl px-3 py-2 flex items-center gap-2">
+      <a href="tel:+70000000000" class="flex-1 inline-flex items-center justify-center gap-2 rounded-xl bg-slate-900 px-3 py-2 text-sm font-semibold text-white">
+        <i class="fa-solid fa-phone"></i> Позвонить
+      </a>
+      <a href="#lead" class="flex-1 inline-flex items-center justify-center gap-2 rounded-xl bg-white px-3 py-2 text-sm font-semibold text-slate-900 border border-slate-200">
+        <i class="fa-solid fa-pen-to-square"></i> Форма
+      </a>
+      <button data-open-modal class="flex-1 inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-600 px-3 py-2 text-sm font-semibold text-white">
+        <i class="fa-solid fa-paper-plane"></i> Заявка
+      </button>
+    </div>
+  </div>
+
+  <!-- Modal: Lead -->
+  <div id="modal" class="fixed inset-0 z-50 hidden">
+    <div class="absolute inset-0 bg-slate-900/60" data-close-modal></div>
+    <div class="absolute inset-x-0 top-10 mx-auto max-w-xl px-4">
+      <div class="rounded-3xl bg-white shadow-glow border border-slate-200 overflow-hidden">
+        <div class="p-5 sm:p-6 flex items-start justify-between gap-4">
+          <div>
+            <p class="text-sm text-slate-500">Заявка на консультацию</p>
+            <p class="text-xl font-extrabold">Подбор решения под ваш KPI</p>
+          </div>
+          <button class="h-10 w-10 rounded-xl border border-slate-200 hover:bg-slate-50 flex items-center justify-center" data-close-modal aria-label="Закрыть">
+            <i class="fa-solid fa-xmark text-slate-700"></i>
+          </button>
+        </div>
+
+        <div class="px-5 sm:px-6 pb-6">
+          <form class="grid sm:grid-cols-2 gap-4" id="modalForm"
+                onsubmit="event.preventDefault(); window.__showThanks(true); window.__closeModal(); this.reset();">
+            <div class="sm:col-span-1">
+              <label class="block text-sm font-semibold text-slate-700">Имя</label>
+              <input required type="text" placeholder="Как к вам обращаться"
+                     class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 outline-none focus:ring-2 focus:ring-emerald-400 focus:border-emerald-400" />
+            </div>
+            <div class="sm:col-span-1">
+              <label class="block text-sm font-semibold text-slate-700">Телефон</label>
+              <input required type="tel" placeholder="+7 (___) ___-__-__"
+                     class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 outline-none focus:ring-2 focus:ring-emerald-400 focus:border-emerald-400" />
+            </div>
+            <div class="sm:col-span-2">
+              <label class="block text-sm font-semibold text-slate-700">Культура / дефекты / цель</label>
+              <textarea rows="4" placeholder="Например: пшеница, визуальные дефекты, цель — стабильный премиум"
+                        class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 outline-none focus:ring-2 focus:ring-emerald-400 focus:border-emerald-400"></textarea>
+            </div>
+            <div class="sm:col-span-2 flex flex-col sm:flex-row gap-3 items-center">
+              <button type="submit"
+                      class="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-600 px-6 py-3 font-semibold text-white hover:bg-emerald-700 transition shadow-soft">
+                <i class="fa-solid fa-paper-plane"></i>
+                Отправить
+              </button>
+              <p class="text-xs text-slate-500">Нажимая «Отправить», вы соглашаетесь на обработку данных.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <p class="mt-3 text-center text-xs text-white/70">ESC — закрыть</p>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="fixed inset-0 z-50 hidden">
+    <div class="absolute inset-0 bg-slate-900/70" data-close-lightbox></div>
+    <div class="absolute inset-x-0 top-10 mx-auto max-w-4xl px-4">
+      <div class="rounded-3xl bg-white border border-slate-200 shadow-glow overflow-hidden">
+        <div class="p-4 flex items-center justify-between gap-4">
+          <p id="lightboxTitle" class="font-extrabold">Фото</p>
+          <button class="h-10 w-10 rounded-xl border border-slate-200 hover:bg-slate-50 flex items-center justify-center" data-close-lightbox aria-label="Закрыть">
+            <i class="fa-solid fa-xmark text-slate-700"></i>
+          </button>
+        </div>
+        <div class="p-4">
+          <div class="aspect-[16/9] rounded-2xl bg-gradient-to-br from-slate-200 to-slate-100 flex items-center justify-center" id="lightboxBody">
+            <i class="fa-solid fa-image text-slate-400 text-4xl"></i>
+          </div>
+          <p class="mt-3 text-sm text-slate-600">
+            Подставьте сюда реальное изображение (через <code class="px-1 py-0.5 bg-slate-100 rounded">img</code> или background-image).
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Thanks helper
+    window.__showThanks = (scrollToForm=false) => {
+      const t = document.getElementById('thanks');
+      if (t) t.classList.remove('hidden');
+      if (scrollToForm) document.getElementById('lead')?.scrollIntoView({behavior:'smooth', block:'start'});
+    };
+
+    // Modal
+    const modal = document.getElementById('modal');
+    window.__openModal = () => modal.classList.remove('hidden');
+    window.__closeModal = () => modal.classList.add('hidden');
+
+    document.querySelectorAll('[data-open-modal]').forEach(btn => btn.addEventListener('click', window.__openModal));
+    document.querySelectorAll('[data-close-modal]').forEach(btn => btn.addEventListener('click', window.__closeModal));
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') { window.__closeModal(); closeLightbox(); }
+    });
+
+    // Lightbox
+    const lb = document.getElementById('lightbox');
+    const lbTitle = document.getElementById('lightboxTitle');
+
+    function openLightbox(title) {
+      lbTitle.textContent = title || 'Фото';
+      lb.classList.remove('hidden');
+    }
+    function closeLightbox() {
+      lb.classList.add('hidden');
+    }
+    window.closeLightbox = closeLightbox;
+
+    document.querySelectorAll('[data-lightbox]').forEach(el => {
+      el.addEventListener('click', () => openLightbox(el.getAttribute('data-title')));
+    });
+    document.querySelectorAll('[data-close-lightbox]').forEach(el => el.addEventListener('click', closeLightbox));
+
+    // KPI counters (simple)
+    const counters = document.querySelectorAll('[data-count]');
+    let counted = false;
+    const easeOut = t => 1 - Math.pow(1 - t, 3);
+
+    function runCounters() {
+      if (counted) return;
+      const hero = document.querySelector('header');
+      const rect = hero.getBoundingClientRect();
+      if (rect.bottom < 80) return; // after scroll a bit
+      counted = true;
+
+      counters.forEach(node => {
+        const target = parseInt(node.getAttribute('data-count'), 10);
+        const start = 0;
+        const duration = 900;
+        const t0 = performance.now();
+        function tick(now) {
+          const p = Math.min(1, (now - t0) / duration);
+          const v = Math.round(start + (target - start) * easeOut(p));
+          node.textContent = v;
+          if (p < 1) requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
+      });
+    }
+    // Start on load and on scroll
+    runCounters();
+    window.addEventListener('scroll', runCounters, { passive: true });
+  </script>
+</body>
+</html>
